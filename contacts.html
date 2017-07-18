@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="includedContent">
+			<object id="modal" data="./popup.html">
+    		Your browser doesn’t support the object tag.
+			</object>
+		</div>
+		<div id="content-cell">
+			<div class="columns">
+				<div class="left-column">
+					<div class="left-column-data">
+						<a href="./index.html" class="logo-wrapper">
+							<div class="logo"></div>
+							<p class="pre">Low Office of</p>
+							<p class="name">Barry S. Yaches, P.C.</p>
+						</a>
+						<nav id="main-menu" class="left-menu">
+							<ul>
+								<li>
+									<a href="./firm_profile.html" itemprop="url">
+										<span>Firm Profile</span>
+									</a>
+								</li>
+								<li>
+									<a href="./practice_areas.html" itemprop="url">
+										<span>Particle Areas</span>
+									</a>
+								</li>
+								<li>
+									<a href="./legal_news.html" itemprop="url">
+										<span>Legal News</span>
+									</a>
+								</li>
+								<li>
+									<a class="active" href="./contacts.html" itemprop="url">
+										<span>Contacts</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					<button type="button" id="open-contact-popup" class="btn">Contact Us</button>
+					</div>
+				</div>
+				<div class="right-column">
+						<div id="map" class="imaged-block" ></div>
+						<div class="right-column-data overlay">
+								<h1 class="title-h1">
+									Our Address
+								<h1>
+								<div class="address">
+									<div class="column">
+										<p>400 Greenwood Avenue</p>
+										<p>Wyncote, PA 19095</p>
+										<p>Tel: <a href="tel:2158863588">215-886-3588</a></p>
+										<p>Fax: 215-886-3900</p>
+										<p>Email: <a href="byaches@yacheslaw.com">byaches@yacheslaw.com</a></p>
+									</div>
+									<div class="column">
+										<p>Office Hours</p>
+										<p>9:00am to 6:00pm</p>
+										<p>Evening and weekend hours available by appointment</p>
+									</div>
+								</div>
+						 </div>
+			  </div>
+		  </div>
+		</div>
+		<div id="footer-wrapper">
+			<div id="footer-cell">
+				<footer>
+					<div class="flex">
+						<div class="copyright">
+							Law Office of Barry S. Yaches, P.C. © 2016<br/>
+							400 Greenwood Avenue Wyncote, PA 19095<br/>
+							Byaches@yacheslaw.com
+						</div>
+						<div class="menu-box">
+							<nav id="footer-menu">
+								<ul>
+									<li><a href="./firm_profile.html" >Firm Profile </a></li>
+									<li><a href="./practice_areas.html" >PracticeAreas</a></li>
+									<li><a href="./legal_news.html" >Legal News</a></li>
+									<li><a href="./contacts.html" >Contacts</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="right-box">
+							215-886-3588<br/><br/>
+							Web Sollutions — Direct Line Development<br/>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</div>
+	<script>
+		var map;
+		function initMap() {
+			var myLatLng = {lat: 40.08994113, lng: -75.14592111};
+			map = new google.maps.Map(document.getElementById('map'), {
+				center: myLatLng,
+				zoom: 15,
+				disableDefaultUI: true
+			});
+			var marker = new google.maps.Marker({
+			 position: myLatLng,
+			 map: map,
+			 title: 'Wyncote, 400 Greenwood Avenue'
+			});
+		}
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDytyuKCvBiEozqAv_uuS1Vvo2E5VV8M6M&language=en&callback=initMap"
+	async defer></script>
+</body>
+</html>
