@@ -8,10 +8,33 @@
 
 <body>
 	<div id="wrapper">
-		<div id="includedContent">
-			<object id="modal" data="./popup.html">
-    		Your browser doesn’t support the object tag.
-			</object>
+		<<div id="includedContent">
+			<div id="modal" class="popup">
+	        <div class="contact-wrapper">
+	          <form class="popup-form">
+	            <h1 class="title-h1" style="color: #ffffff;">Contact Us  <span id="close">&times;</span></h1>
+	            <p><span class="hint">Name*</span></p>
+	            <p><input class="insert" size="100" type="text"></p>
+	            <p><span class="hint">Phone*</span></p>
+	            <p><input class="insert" type="text"></p>
+	            <p><span class="hint">Choose a service you’re interested in:</span></p>
+	            <p><select class="insert" type="text">
+	              <option>----------</option>
+	              <option>Personal Injury</option>
+	              <option>Medical Malpractice</option>
+	              <option>Nursing Home Abuse</option>
+	              <option>Auto Accidents</option>
+	              <option>Wrongful Death</option>
+	              <option>Commercial Litigation</option>
+	              <option>Insurance Litigation</option>
+	              <option>Real Estate Law and Litigation</option>
+	            </select></p>
+	            <p><span class="hint">Briefly describe what you wish to discuss with Mr. Yaches.</span></p>
+	            <p><textarea class="insert" style="height: 160px;" type="text"></textarea></p>
+	            <button id="popup-btn" class="btn">Send</button>
+	          </form>
+	        </div>
+	    </div>
 		</div>
 		<div id="content-cell">
 			<div class="columns">
