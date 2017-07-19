@@ -1,0 +1,38 @@
+.gray-block {
+  background-color: #f1f1f1;
+}
+.gray-block .title {
+  padding-top: 95px;
+}
+.cases {
+  padding-bottom: 100px;
+}
+.cases  li {
+  position: relative;
+  z-index: 1;
+  margin-bottom: .5em;
+  padding-bottom: 0;
+  padding-left: 1.2em;
+}
+.cases  ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  padding-left: 0;
+}
+.cases {
+  padding-bottom: 100px;
+}
+.cases  li {
+  position: relative;
+  z-index: 1;
+  margin-bottom: .5em;
+  padding-bottom: 0;
+  padding-left: 1.2em;
+}
+.cases  ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  padding-left: 0;
+}

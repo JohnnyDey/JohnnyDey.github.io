@@ -1,0 +1,23 @@
+
+.bg-block {
+  position: relative;
+  background: url(../img/003.jpg) no-repeat;
+  background-size: cover;
+}
+.bg-block .article {
+  margin-top: 30px;
+  color: #fff;
+}
+.bg-block .view-more {
+  color: #fff;
+}
+.bg-block .view-more:after {
+  border-left: 5px solid #fff;
+}
+.bg-block .right-column-data {
+  position: relative;
+  z-index: 2;
+}
+.bg-block .title {
+  color: #fff;
+}
